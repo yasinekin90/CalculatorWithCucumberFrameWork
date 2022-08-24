@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="9" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="111.005">
-    <testcase classname="US001 positive calculator test" name="TC01 User tests factorial of 8 is 40320" time="7.335">
+<testsuite errors="0" failures="9" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="111.909">
+    <testcase classname="US001 positive calculator test" name="TC01 User tests factorial of 8 is 40320" time="5.546">
         <system-out><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "8" to placeholder..............................................passed
 Then clicks to calculate button.............................................passed
 And verify the result of calculation........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US002 Verification of Pubinno Link" name="Verifying Pubinno Link" time="4.792">
+    <testcase classname="US002 Verification of Pubinno Link" name="Verifying Pubinno Link" time="3.623">
         <failure message="Content of link is wrong expected:&lt;Pubi[n]no&gt; but was:&lt;Pubi[r]no&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User navigates to "calculator" page...................................passed
 Then verify the content of pubinno link.....................................failed
 
@@ -18,13 +18,13 @@ org.junit.ComparisonFailure: Content of link is wrong expected:<Pubi[n]no> but w
 	at ✽.verify the content of pubinno link(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US002%20Pubinno%20Text%20Control.feature:5)
 ]]></failure>
     </testcase>
-    <testcase classname="US002 Verification of Pubinno Link" name="Verify if pubinno link directs to HomePage" time="17.451">
+    <testcase classname="US002 Verification of Pubinno Link" name="Verify if pubinno link directs to HomePage" time="17.989">
         <system-out><![CDATA[Given User navigates to "calculator" page...................................passed
 When clicks to pubinno link.................................................passed
 Then navigates to pubinno homepage..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US003 User Verifies Terms and Conditions" name="User verify whether the link directs to expected page" time="7.355">
+    <testcase classname="US003 User Verifies Terms and Conditions" name="User verify whether the link directs to expected page" time="5.941">
         <failure message="Terms and Conditions Link Directs to wrong page expected:&lt;...w.azurewebsites.net/[terms]&gt; but was:&lt;...w.azurewebsites.net/[privacy]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User navigates to "calculator" page...................................passed
 When clicks on terms and conditions link....................................passed
 Then verifies if the direction is correct...................................failed
@@ -36,7 +36,7 @@ org.junit.ComparisonFailure: Terms and Conditions Link Directs to wrong page exp
 	at ✽.verifies if the direction is correct(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US003%20Terms%20and%20Conditions.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="US004 User Verifies Privacy" name="User verifies whether the privacy link directs to expected page" time="4.1">
+    <testcase classname="US004 User Verifies Privacy" name="User verifies whether the privacy link directs to expected page" time="3.954">
         <failure message="Privacy Link Directs to wrong page expected:&lt;...w.azurewebsites.net/[privacy]&gt; but was:&lt;...w.azurewebsites.net/[terms]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User navigates to "calculator" page...................................passed
 When clicks privacy link....................................................passed
 Then user verifies if the direction is correct..............................failed
@@ -48,7 +48,7 @@ org.junit.ComparisonFailure: Privacy Link Directs to wrong page expected:<...w.a
 	at ✽.user verifies if the direction is correct(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US004%20Privacy.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="US005 Evaluation of the application with the usability aspects" name="User clicks to Enter from the Keyboard" time="11.957">
+    <testcase classname="US005 Evaluation of the application with the usability aspects" name="User clicks to Enter from the Keyboard" time="10.921">
         <failure message="Enter button is not enabled.It should be better If it is activated expected:&lt;[The factorial of 4 is: 24]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User navigates to "calculator" page...................................passed
 When writes "4" to placeholder..............................................passed
 Then clicks to Enter from the Keyboard......................................failed
@@ -60,7 +60,7 @@ org.junit.ComparisonFailure: Enter button is not enabled.It should be better If 
 	at ✽.clicks to Enter from the Keyboard(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US005%20Usability%20Of%20The%20Application.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="US005 Evaluation of the application with the usability aspects" name="User clicks to RightArrow" time="3.601">
+    <testcase classname="US005 Evaluation of the application with the usability aspects" name="User clicks to RightArrow" time="4.044">
         <failure message="RightArrow button is not enabled.It should be better If it is activated expected:&lt;[The factorial of 4 is: 24]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User navigates to "calculator" page...................................passed
 When writes "4" to placeholder..............................................passed
 Then clicks to rightArrow button............................................passed
@@ -73,7 +73,7 @@ org.junit.ComparisonFailure: RightArrow button is not enabled.It should be bette
 	at ✽.User should see the result(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US005%20Usability%20Of%20The%20Application.feature:12)
 ]]></failure>
     </testcase>
-    <testcase classname="US005 Evaluation of the application with the usability aspects" name="User reads the context of placeholder" time="3.653">
+    <testcase classname="US005 Evaluation of the application with the usability aspects" name="User reads the context of placeholder" time="4.18">
         <failure message="User may not understand what the meaning of &quot;INTEGER&quot; is expected:&lt;Enter a[n integ]er&gt; but was:&lt;Enter a[ numb]er&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User navigates to "calculator" page...................................passed
 Then user should understand the context of placeholder clearly..............failed
 
@@ -84,21 +84,21 @@ org.junit.ComparisonFailure: User may not understand what the meaning of "INTEGE
 	at ✽.user should understand the context of placeholder clearly(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US005%20Usability%20Of%20The%20Application.feature:16)
 ]]></failure>
     </testcase>
-    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits" time="6.602">
+    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits" time="9.308">
         <system-out><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "0" to placeholder..............................................passed
 Then clicks to calculate button.............................................passed
 And User verifies "0" gives the correct results.............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 2" time="6.798">
+    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 2" time="6.787">
         <system-out><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "21" to placeholder.............................................passed
 Then clicks to calculate button.............................................passed
 And User verifies "21" gives the correct results............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 3" time="6.547">
+    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 3" time="7.983">
         <failure message="Number Between 22-170 gives numbers that can not be understandable.Test is Failed" type="java.lang.AssertionError"><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "22" to placeholder.............................................passed
 Then clicks to calculate button.............................................passed
@@ -112,7 +112,7 @@ java.lang.AssertionError: Number Between 22-170 gives numbers that can not be un
 	at ✽.User verifies "22" gives the correct results(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US006%20User%20Test%20the%20Data%20Limits.feature:11)
 ]]></failure>
     </testcase>
-    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 4" time="8.674">
+    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 4" time="8.124">
         <failure message="Number Between 22-170 gives numbers that can not be understandable.Test is Failed" type="java.lang.AssertionError"><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "170" to placeholder............................................passed
 Then clicks to calculate button.............................................passed
@@ -126,21 +126,21 @@ java.lang.AssertionError: Number Between 22-170 gives numbers that can not be un
 	at ✽.User verifies "170" gives the correct results(file:///C:/Users/user/IdeaProjects/selenium-projects/com.factorialCalculator/src/test/resources/features/US006%20User%20Test%20the%20Data%20Limits.feature:11)
 ]]></failure>
     </testcase>
-    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 5" time="7.186">
+    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 5" time="6.986">
         <system-out><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "171" to placeholder............................................passed
 Then clicks to calculate button.............................................passed
 And User verifies "171" gives the correct results...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 6" time="6.799">
+    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 6" time="8.232">
         <system-out><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "978" to placeholder............................................passed
 Then clicks to calculate button.............................................passed
 And User verifies "978" gives the correct results...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 7" time="7.782">
+    <testcase classname="US006 User test the data limits of the app" name="User tests the boundries of the datalimits 7" time="7.888">
         <failure message="979 and up gives no action.Function of calculate button is not activated.Test is Failed" type="java.lang.AssertionError"><![CDATA[Given User navigates to "calculator" page...................................passed
 Then writes "979" to placeholder............................................passed
 Then clicks to calculate button.............................................passed
