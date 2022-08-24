@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/Pcucumber1.json",
                 "junit:target/xml-report/Pcucumber1.xml"},
         glue = "stepdefinitions",
-        tags = "@TestCalculator",
+        tags = "@TestCalculator or @PubinnoLink or @Terms or @Privacy or @Usability or @DataLimits" ,
         dryRun = false
 )
 public class TestRunner {

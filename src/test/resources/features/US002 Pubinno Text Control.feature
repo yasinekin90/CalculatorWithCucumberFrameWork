@@ -1,4 +1,4 @@
-@TestCalculator
+@PubinnoLink
 Feature: US002 Verification of Pubinno Link
   Scenario: Verifying Pubinno Link
     Given User navigates to "calculator" page

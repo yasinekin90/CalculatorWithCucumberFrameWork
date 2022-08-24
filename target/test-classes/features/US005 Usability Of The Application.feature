@@ -1,3 +1,4 @@
+@Usability
 Feature: US005 Evaluation of the application with the usability aspects
   Scenario: User clicks to Enter from the Keyboard
     Given User navigates to "calculator" page

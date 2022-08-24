@@ -120,7 +120,7 @@ public class CalculatorStepDefinitions {
     @And("User should see the result")
     public void userShouldSeeTheResult() {
         String text = calculationPage.result.getText();
-        System.out.println("calculationPage.cssValueofPlaceHolder.getAttribute(\"placeholder\") = " + calculationPage.cssValueofPlaceHolder.getAttribute("placeholder"));
+
         Assert.assertEquals("RightArrow button is not enabled.It should be better If it is activated",
                 "The factorial of 4 is: 24",text);
     }
@@ -134,6 +134,35 @@ public class CalculatorStepDefinitions {
         Assert.assertEquals("User may not understand what the meaning of \"INTEGER\" is"
                 ,actualContext,expectedContext);
 
+    }
 
+
+    @And("User verifies {string} gives the correct results")
+    public void userVerifiesGivesTheCorrectResults(String integer) {
+        ReusableMethods.waitFor(3);
+        String result = calculationPage.result.getText();
+        String[] s = result.split(" "); //s[5] gives the integer in the result
+        System.out.println("result = " + result);
+        if(result.contains("Infinity")){
+            System.out.println("Number Between 171-978 gives Infinity as a result And "+integer+" gives "+s[5]+" as a result");
+            Assert.assertTrue("Test is Failed",true);
+            System.out.println("Numbers between 171-978 gives Infinity.Test is Passed");
+        }else if(result.contains("e+")){
+            System.out.println("Number Between 22-170 gives numbers that can not be understandable And "
+                    +integer+" gives "+s[5]+" as a result");
+            Assert.assertTrue("Number Between 22-170 gives numbers that can not be understandable.Test is Failed"
+                    ,false);
+
+        }else if(result.equals("")){
+            System.out.println("979 and up gives no action And "
+                    +integer+" gives no result.Function of calculate button is not activated");
+            Assert.assertTrue("979 and up gives no action.Function of calculate button is not activated.Test is Failed"
+                    ,false);
+        }
+        else {
+            System.out.println("Number Between 0-21 gives normal results And "+integer+" gives "+s[5]+" as a result.");
+            Assert.assertTrue("Test Failed",true);
+            System.out.println("Number Between 0-21 gives normal results.Test is passed");
+        }
     }
 }
