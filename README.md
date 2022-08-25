@@ -11,10 +11,19 @@ Under pages package , CalculationPage which is involved pagefactory and locators
 ## runners
 Under runners package , TestRunner class which is used to run all tests by using "mvn clean verify" command by pressing ctrl+enter in the terminal
 ![image](https://user-images.githubusercontent.com/100432135/186496990-149751b0-1e3d-4c63-b893-a84900faf7f1.png)
+### See How to used terminal
+
+
+
+https://user-images.githubusercontent.com/100432135/186603704-7eb7b1e8-3078-4d1e-9888-73e20c3dfcc7.mp4
+
+
+
 ## stepdefinitions
 Under stepdefinitions,There are CalculatorStepDefinitions and Hooks classes.
 ### CalculatorStepDefinitions
 This class consists of methods which are tested step by step
+
 ![image](https://user-images.githubusercontent.com/100432135/186497916-e5d44cf0-0f28-4f7c-8072-36d2ab2c05e2.png)
 ### Hooks
 This class is used for taking screenshots automaticaly when test is failed
@@ -38,13 +47,15 @@ This directory have some kinds of reports which are shown in the picture below.T
 
 ![image](https://user-images.githubusercontent.com/100432135/186501494-571331ac-9a13-426f-9e1e-14869e20b551.png)
 
-When you open the reports you are gonna see smart cucumber pages as shown in the picture 
+When you open the reports you are gonna see smart cucumber pages as shown in the video
 
-![image](https://user-images.githubusercontent.com/100432135/186502392-758ce54e-0438-4f31-92ab-85e0d455ed26.png)
-![image](https://user-images.githubusercontent.com/100432135/186502457-2a97d43c-b76e-4e71-9bca-e6bf8df8a63c.png)
-![image](https://user-images.githubusercontent.com/100432135/186502529-75110a49-5b16-44ad-ae43-77b543d5c5e4.png)
-![image](https://user-images.githubusercontent.com/100432135/186502601-0ebc0ca4-9a0d-4698-a474-70c44c6133d5.png)
+
+https://user-images.githubusercontent.com/100432135/186604917-6232ebc3-5f0f-4cf0-8226-923ff0968750.mp4
+
+
+
 ## configuration.properties
 This file is used by ConfigurationReader for invoking key values of browsers,passwords or other infos
 
 ![image](https://user-images.githubusercontent.com/100432135/186503459-5fcf3603-f5c9-4826-b9e2-ae9dbddde343.png)
+
